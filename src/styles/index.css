@@ -1,12 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap");
 
-/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
 
-*/
+.todoApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.todoHeader {
+  font-size: 6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: #c0c0c0;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #ececec;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.inputBoxSave {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+}
+input {
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: rgb(179, 180, 182);
+  background-color: #f9f9f9;
+  padding: 0 1rem;
+}
+
+input::placeholder {
+  color: rgb(179, 180, 182);
+}
+
+.saveBtn {
+  padding: 8px;
+  border: 1px solid rgb(92, 93, 94);
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+ul li {
+  width: 100%;
+  height: 50px;
+  background-color: #f9f9f9;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(179, 180, 182);
+  padding: 0 1rem;
+  border-bottom: 1px solid #ececec;
+}
+.itemsLeft {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding-left: 1rem;
+  color: rgb(179, 180, 182);
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  fill: slategray;
+  cursor: pointer;
+}
+
+.bgDivContainer {
+  width: 550px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bgDiv1 {
+  width: 98%;
+  border-bottom: 1px solid #ececec;
+  z-index: 10;
+}
+
+.bgDiv2 {
+  width: 94%;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.25);
+  z-index: 9;
+}
+
+.bgDiv1,
+.bgDiv2 {
+  height: 6px;
+  border-left: 1px solid #b8b6b6;
+  border-right: 1px solid #b8b6b6;
+  background-color: #f9f9f9;
+}
